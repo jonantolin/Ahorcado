@@ -1,2 +1,2 @@
 # Ahorcado
-Juego del ahorcado
+Juego del ahorcado para 1 o 2 jugadores
