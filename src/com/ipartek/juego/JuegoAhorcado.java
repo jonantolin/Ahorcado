@@ -26,7 +26,6 @@ public class JuegoAhorcado {
 	
 	public void partidaNueva() {
 		
-		
 		System.out.println("Pulsa ENTER para jugar solo o Escribe una palabra que otro jugador tendrá que adivinar");
 		String escogida = sc.nextLine().toUpperCase();
 		
