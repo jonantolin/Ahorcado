@@ -6,7 +6,6 @@ public class Prueba {
 		
 		new JuegoAhorcado();
 		
-
 	}
 
 }
