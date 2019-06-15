@@ -51,7 +51,7 @@ public class JuegoAhorcado {
 		// Se ira rellenando con los caracteres acertados
 		for (int i = 0; i < getPALABRA_ESCOGIDA().length(); i++) {
 			palabraAcertadas[i] = '_';
-			palabraGuiones += "_";
+			palabraGuiones += "_ "; // Coloco espacios entre caracteres para que el usuario distinga cuantas letras tiene la palabra
 		}
 
 		System.out.println("Empieza el juego");
@@ -113,16 +113,24 @@ public class JuegoAhorcado {
 					if (guionesEncontrados == 0) { // No ha encontrado ninguno, gana el juego
 
 						ganado = true;
-						System.out.println(palabraGuiones);
-						System.out.println("\nFELICIDADES, HAS SOBREVIVIDO AL AHORCADO");						
+						
+						System.out.println("\nFELICIDADES, HAS SOBREVIVIDO AL AHORCADO");	
+						System.out.println("\n\nHas acertado la palabra: "+palabraGuiones);
 						break;
 					
 					}
 				}
-			// Si entra aquí aun quedan letras por descubrir sigue jugando
+			// Si llega aquí aun quedan letras por descubrir, sigue jugando
 					
 					System.out.println("Intento (" + intentoActual + "/" + INTENTOS_TOTALES + ")");
-					System.out.println("Palabra a adivinar: " + palabraGuiones);
+					
+					
+					// Coloco espacios entre caracteres para que el usuario distinga cuantas letras tiene la palabra
+					String palabraSeparada = ""; 
+					for (int i = 0; i < palabraGuiones.length(); i++) {
+						palabraSeparada += palabraGuiones.charAt(i)+ " ";
+					}
+					System.out.println("Palabra a adivinar: " + palabraSeparada);
 
 					System.out.println("\nIntroduce otra letra: ");
 
