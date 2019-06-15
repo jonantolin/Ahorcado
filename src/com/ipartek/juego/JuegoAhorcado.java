@@ -33,6 +33,7 @@ public class JuegoAhorcado {
 		if(escogida.length() > 0) {
 			setPALABRA_ESCOGIDA(escogida);
 		}
+		
 		jugar();
 		
 	}
