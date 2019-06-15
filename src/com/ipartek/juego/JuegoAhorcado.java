@@ -29,7 +29,6 @@ public class JuegoAhorcado {
 		System.out.println("Pulsa ENTER para jugar solo o Escribe una palabra que otro jugador tendrá que adivinar");
 		String escogida = sc.nextLine().toUpperCase();
 		
-		
 		if(escogida.length() > 0) {
 			setPALABRA_ESCOGIDA(escogida);
 		}
@@ -88,7 +87,7 @@ public class JuegoAhorcado {
 
 				} // termina for
 
-				if (!letraAcertada) { // La letra no estaba en la palabra oculta
+				if (!letraAcertada) { // La letra NO estaba en la palabra oculta
 					intentoActual++;
 					
 					if (intentoActual > INTENTOS_TOTALES) { // compruebo si pierde (agota intentos)
@@ -100,7 +99,7 @@ public class JuegoAhorcado {
 						break; // salgo del bucle
 					}
 					
-				}else { // La letra  SI estaba en la palabra oculta
+				}else { // La letra SI estaba en la palabra oculta
 					
 					// Para comprobar si ha ganado comprueblo si quedan guiones en palabraGuiones, que es la palabra oculta que se va rellenando con las letras acertadas
 					int guionesEncontrados = 0;
