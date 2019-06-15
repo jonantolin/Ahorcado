@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 
  * @author Jon
- *
+ * 
  * 
  */
 public class JuegoAhorcado {
