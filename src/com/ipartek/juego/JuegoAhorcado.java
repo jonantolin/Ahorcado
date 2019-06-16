@@ -20,6 +20,7 @@ public class JuegoAhorcado {
 
 	public JuegoAhorcado() { 
 		
+
 		partidaNueva();
 	}
 
@@ -73,7 +74,7 @@ public class JuegoAhorcado {
 
 				for (int i = 0; i < getPALABRA_ESCOGIDA().length(); i++) { // Compruebo si la letra introducida está en la palabra escogida
 																		
-
+							
 					if (letraIntroducida == getPALABRA_ESCOGIDA().charAt(i)) {
 
 						letraAcertada = true;
@@ -81,7 +82,7 @@ public class JuegoAhorcado {
 
 						palabraGuiones = "";
 						for (int j = 0; j < palabraAcertadas.length; j++) {
-							palabraGuiones += palabraAcertadas[j];
+							palabraGuiones += palabraAcertadas[j]+ " ";
 						}
 					}
 
@@ -123,13 +124,7 @@ public class JuegoAhorcado {
 					
 					System.out.println("Intento (" + intentoActual + "/" + INTENTOS_TOTALES + ")");
 					
-					
-					// Coloco espacios entre caracteres para que el usuario distinga cuantas letras tiene la palabra
-					String palabraSeparada = ""; 
-					for (int i = 0; i < palabraGuiones.length(); i++) {
-						palabraSeparada += palabraGuiones.charAt(i)+ " ";
-					}
-					System.out.println("Palabra a adivinar: " + palabraSeparada);
+					System.out.println("Palabra a adivinar: " + palabraGuiones);
 
 					System.out.println("\nIntroduce otra letra: ");
 
@@ -137,7 +132,7 @@ public class JuegoAhorcado {
 
 			} else { // Si ha introducido mas de una letra por teclado
 
-				System.out.println("Recuerda introducir únicamente una letra, \nAdelante elige una");
+				System.out.println("\nRecuerda introducir únicamente una letra\n\nPalabra a adivinar: "+palabraGuiones+" \n\nAdelante elige una:");
 			}
 		}
 
