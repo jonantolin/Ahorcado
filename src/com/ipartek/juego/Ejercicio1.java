@@ -31,7 +31,10 @@ public class Ejercicio1 {
 				System.out.println("Ha introducido datos sin el formato indicado o fuera de rango.");
 				break;
 			}
-			if(peso > 95) {
+			if(peso < 0 ) {
+				System.out.println("No puedes poner un peso negativo");
+			}
+			else if(peso > 95) {
 				System.out.println("Peso Pesado");
 			}else if(peso <= 90 && peso >= 65) {
 				System.out.println("Peso mediano");
