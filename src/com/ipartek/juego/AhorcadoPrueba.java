@@ -1,6 +1,6 @@
 package com.ipartek.juego;
 
-public class Prueba {
+public class AhorcadoPrueba {
 
 	public static void main(String[] args) {
 		
