@@ -19,37 +19,7 @@ public class TrenTest {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
-	/*
-	 * 
-	 * 	@BeforeEach
-	void setUp() throws Exception {
-		tren = new Tren("Locomotora", "LOC-123", 3, 5);
-	}
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
-	@Test
-	void testTren() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testTrenStringStringIntInt() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetTipo() {
-		
-		assertEquals("Locomotora", tren.getTipo());
-	}
-
-	 * 
-	 * 
-	 * 
-	 */
 	@Before
 	public void setUp() throws Exception {
 		
