@@ -1,31 +1,27 @@
 package com.ipartek.juego;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-class TrenTest {
+public class TrenTest {
 	
 	Tren tren;
-	static final String TIPO = "Locomotora";
-	static final String REFERENCIA = "Locomotora";
-	static final int ASIENTOS_OCUPADOS = 30;
-	static final int ANOS_ACTIVOS = 20;
-	
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
 	}
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
 	}
-
-	@BeforeEach
+	/*
+	 * 
+	 * 	@BeforeEach
 	void setUp() throws Exception {
 		tren = new Tren("Locomotora", "LOC-123", 3, 5);
 	}
@@ -50,53 +46,82 @@ class TrenTest {
 		assertEquals("Locomotora", tren.getTipo());
 	}
 
+	 * 
+	 * 
+	 * 
+	 */
+	@Before
+	public void setUp() throws Exception {
+		
+		tren = new Tren("Locomotora", "LOC-123", 3, 5);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
 	@Test
-	void testSetTipo() {
+	public void testTren() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetReferencia() {
+	public void testTrenStringStringIntInt() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testSetReferencia() {
+	public void testGetTipo() {
+		assertEquals("Realizada", "Locomotora", tren.getTipo());
+	}
+
+	@Test
+	public void testSetTipo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetAsientosOcupados() {
+	public void testGetReferencia() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testSetAsientosOcupados() {
+	public void testSetReferencia() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetAnosActivo() {
+	public void testGetAsientosOcupados() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testSetAnosActivo() {
+	public void testSetAsientosOcupados() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testToString() {
+	public void testGetAnosActivo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testTrenLleno() {
+	public void testSetAnosActivo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testDemasiadoViejo() {
+	public void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testTrenLleno() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDemasiadoViejo() {
 		fail("Not yet implemented");
 	}
 
