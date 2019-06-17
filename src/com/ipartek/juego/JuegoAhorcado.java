@@ -54,7 +54,7 @@ public class JuegoAhorcado {
 			palabraGuiones += "_ "; // Coloco espacios entre caracteres para que el usuario distinga cuantas letras tiene la palabra
 		}
 
-		System.out.println("Empieza el juego");
+		System.out.println("\n\nEmpieza el juego");
 		System.out.println("----------------");
 		System.out.println("\nTienes " + INTENTOS_TOTALES + " intentos");
 		System.out.println("Intento (" + intentoActual + "/" + INTENTOS_TOTALES + ")");
