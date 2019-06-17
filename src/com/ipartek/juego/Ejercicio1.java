@@ -25,7 +25,7 @@ public class Ejercicio1 {
 		for (int i = 0; i < numBoxeadores; i++) {
 			
 			try {
-				System.out.println("Introduzca peso del boxeador "+numBoxeadores+": ");
+				System.out.println("Introduzca peso del boxeador "+(i+1)+": ");
 				peso = sc.nextInt();
 			}catch (InputMismatchException e) {
 				System.out.println("Ha introducido datos sin el formato indicado o fuera de rango.");
