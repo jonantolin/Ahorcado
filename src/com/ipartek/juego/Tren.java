@@ -19,6 +19,16 @@ public class Tren {
 	
 	
 	
+	public Tren(String tipo, String referencia, int asientosOcupados, int anosActivo) {
+		super();
+		this.tipo = tipo;
+		this.referencia = referencia;
+		this.asientosOcupados = asientosOcupados;
+		this.anosActivo = anosActivo;
+	}
+
+
+
 	public String getTipo() {
 		return tipo;
 	}
