@@ -16,12 +16,12 @@ import java.util.Scanner;
  */
 public class Ejercicio3 {
 	
-	Scanner sc = new Scanner(System.in);
-	private int [] datos = new int [10];
-	private int suma = 0;
-	private float media;
-	
-	public Ejercicio3() {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int [] datos = new int [10];
+		int suma = 0;
+		float media;
 		
 		for (int i = 0; i < datos.length; i++) {
 			System.out.println("Dato "+(i+1)+", Introduce un numero: ");
@@ -46,14 +46,8 @@ public class Ejercicio3 {
 		System.out.println("\nMedia aritmética: ");
 		System.out.printf("%.2f", media); //Lo formateo para mostrar siempre dos decimales (aunque acabe en 0)
 		
-		
-	}
+		sc.close();
 	
-	public static void main(String[] args) {
-		
-		new Ejercicio3();
-		
-
 	}
 
 }

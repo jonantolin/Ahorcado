@@ -16,15 +16,19 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
 
-	static Scanner sc = new Scanner(System.in);
 	
-	static int x = 0;
+	private static int x = 0;
+
+	public static int getX() {
+		return x;
+	}
+
+	public static void setX(int x) {
+		Ejercicio2.x = x;
+	}
 
 	public static boolean ganar() {
-		
-		System.out.println("Introduce tus puntos del camponato: ");
-		x = sc.nextInt();
-		
+
 		boolean puedeGanar = false;
 		if(x >= 70) {
 			puedeGanar = true;
@@ -35,12 +39,17 @@ public class Ejercicio2 {
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Introduce tus puntos del camponato: ");
+		Ejercicio2.setX(sc.nextInt());
 		if(Ejercicio2.ganar()) {
 			System.out.println("Puede ganar el campeonato");
 		}else {
 			System.out.println("Ponte las pilas si quieres ganar");
 		}
-
+		
+		sc.close();
 	}
 
 }
