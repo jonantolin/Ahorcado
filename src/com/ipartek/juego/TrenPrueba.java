@@ -19,7 +19,7 @@ public class TrenPrueba {
 		System.out.println("Introduce asientos ocupados (billetes vendidos): ");
 		tren1.setAsientosOcupados(sc.nextInt());
 		
-		System.out.println("Introduce asientos años en circulacion:  ");
+		System.out.println("Introduce años en circulacion:  ");
 		tren1.setAnosActivo(sc.nextInt());
 		
 		System.out.println(tren1);
