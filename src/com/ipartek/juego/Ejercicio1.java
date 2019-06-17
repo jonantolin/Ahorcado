@@ -31,8 +31,8 @@ public class Ejercicio1 {
 				System.out.println("Ha introducido datos sin el formato indicado o fuera de rango.");
 				break;
 			}
-			if(peso < 0 ) {
-				System.out.println("No puedes poner un peso negativo");
+			if(peso < 0 || peso > 250) {
+				System.out.println("No puedes poner un peso negativo o pesas demasiado (>250 kg)");
 			}
 			else if(peso > 95) {
 				System.out.println("Peso Pesado");
