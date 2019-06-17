@@ -2,11 +2,22 @@ package com.ipartek.juego;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Jon
+ * 
+ * Introducir puntos de campeonato para saber si aun puede ganar o lo lleva jodido
+ * 
+ * A traves de una funcion que devuelva valor booleano.
+ * 
+ * int x -> los puntos a evaluar
+ *
+ */
+
 public class Ejercicio2 {
 
 	static Scanner sc = new Scanner(System.in);
 	
-	static boolean puedeGanar = false;
 	static int x = 0;
 
 	public static boolean ganar() {
@@ -14,6 +25,7 @@ public class Ejercicio2 {
 		System.out.println("Introduce tus puntos del camponato: ");
 		x = sc.nextInt();
 		
+		boolean puedeGanar = false;
 		if(x >= 70) {
 			puedeGanar = true;
 		}

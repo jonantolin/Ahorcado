@@ -3,6 +3,16 @@ package com.ipartek.juego;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Jon
+ *
+ * Se introduciran el peso de 30 boxeadores (el enunciado obliga int)
+ * Se indicará a qué categoria pertenece por peso
+ * Si se mete un peso mal (no es int o esta fuera de rango) se capturará la excepción
+ * y obligatoriamente se terminará la ejecución
+ */
+
 public class Ejercicio1 {
 
 	public static void main(String[] args) {

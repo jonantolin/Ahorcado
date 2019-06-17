@@ -2,6 +2,18 @@ package com.ipartek.juego;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Jon
+ * 
+ * Introducir 10 numeros por teclado y guardar en array
+ * Obtener los múltiplos de 7
+ * Hallar media aritmética
+ * 
+ * int[] datos -> El array de numeros a introducir y evaluar
+ * int suma -> La suma de todos los números
+ * float media -> La media aritmetica
+ */
 public class Ejercicio3 {
 	
 	Scanner sc = new Scanner(System.in);
@@ -23,7 +35,7 @@ public class Ejercicio3 {
 			suma += datos[i];
 		}
 		
-		media = suma / datos.length;
+		media = suma / datos.length; // No hace falta redondear con Math.round porque se dividira entre 10(solo 1 decimal)
 		System.out.println("Numeros introducidos: \n");
 		
 		for (int i = 0; i < datos.length; i++) {
@@ -32,7 +44,8 @@ public class Ejercicio3 {
 		
 		
 		System.out.println("\nMedia aritmética: ");
-		System.out.println(media);
+		System.out.printf("%.2f", media); //Lo formateo para mostrar siempre dos decimales (aunque acabe en 0)
+		
 		
 	}
 	

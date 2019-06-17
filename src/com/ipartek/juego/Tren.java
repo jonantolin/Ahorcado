@@ -2,6 +2,16 @@ package com.ipartek.juego;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Jon
+ * 
+ * Se introduciran los datos de un tren (Tipo, Referencia, Asientos ocupados y Años en circulación)
+ * Se mostrarán los datos introducidos, indicando si esta lleno o no (asientosOcupados < 400) y
+ * si por antiguedad está en circulación o no (o debería estarlo) (anosActivo < 40)
+ *
+ */
+
 public class Tren {
 	
 	
@@ -46,7 +56,7 @@ public class Tren {
 	}
 	
 	
-	public void mostrarDatos() {
+	public void mostrarDatos() { // Otra opción podia ser sobreescribir el toString()
 		System.out.println("Datos del tren ");
 		System.out.println("----------------");
 		System.out.println("\nTipo: "+tipo);
