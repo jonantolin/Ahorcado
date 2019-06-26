@@ -84,7 +84,10 @@ public class Tren {
 	}
 
 
-
+	/**
+	 * Comprueba si el tren esta lleno de pasajeros
+	 * @return String devuelve mensaje indicando si está lleno
+	 */
 	public String trenLleno() {
 		String mensaje ="";
 		if(getAsientosOcupados() <= ASIENTOS_TOTALES) {
